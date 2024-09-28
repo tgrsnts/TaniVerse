@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <!-- Navbar -->
     <header class="font-poppins shadow fixed top-0 w-full z-10 h-16 bg-white">
         <div
@@ -35,8 +34,8 @@
                             d="M6.925 16.875Q5.2 16.225 4.1 14.713Q3 13.2 3 11.25q0-1.975.938-3.513Q4.875 6.2 6 5.15q1.125-1.05 2.062-1.6L9 3v2.475q0 .625.45 1.062q.45.438 1.075.438q.35 0 .65-.15q.3-.15.5-.425L12 6q.95.55 1.625 1.35t1.025 1.8l-1.675 1.675q-.05-.6-.287-1.175q-.238-.575-.638-1.05q-.35.2-.738.287q-.387.088-.787.088q-1.1 0-1.987-.612Q7.65 7.75 7.25 6.725q-.95.925-1.6 2.062Q5 9.925 5 11.25q0 .775.275 1.462q.275.688.75 1.213q.05-.5.287-.938q.238-.437.588-.787L9 10.1l2.15 2.1q.05.05.1.125t.1.125l-1.425 1.425q-.05-.075-.087-.125q-.038-.05-.088-.1L9 12.925l-.7.7q-.125.125-.212.287q-.088.163-.088.363q0 .3.175.537q.175.238.45.363ZM9 10.1Zm0 0ZM7.4 22L6 20.6L19.6 7L21 8.4L17.4 12H21v2h-5.6l-.5.5l1.5 1.5H21v2h-2.6l2.1 2.1l-1.4 1.4l-2.1-2.1V22h-2v-4.6l-1.5-1.5l-.5.5V22h-2v-3.6Z" />
                     </svg>
                 </span> -->
-                <!-- <span class="font-bold text-first">Kabita.</span> -->
-                <img class="w-32 lg:w-44" src="image/logo-taniverse.png" alt="">
+                <!-- <span class="font-bold text-[#047D00]">TaniVerse</span> -->
+                <img class="w-32 lg:w-24" src="image/logo-taniverse.png" alt="">
             </a>
             <div class="flex flex-row w-full lg:w-96">
                 <form class="w-full mx-auto">
@@ -48,7 +47,7 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <input type="search" id="default-search"
-                            class="block w-full px-2 py-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary"
+                            class="block w-full px-2 py-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:border-[#047D00]"
                             placeholder="Cari di TaniVerse" required />
                         <!-- <button type="submit"
                             class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 :bg-blue-600 :hover:bg-blue-700 :focus:ring-blue-800">Search</button> -->
@@ -85,24 +84,78 @@
                 class="peer-checked:mt-4 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
                 <ul
                     class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0 font-semibold">
-                    <li class="text-white border-b-2 border-first md:mr-12 hover:border-white">
+                    <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
                         <a href="#menu">Menu</a>
                     </li>
-                    <li class="text-white border-b-2 border-first md:mr-12 hover:border-white">
+                    <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
                         <a href="#kontak">Kontak</a>
                     </li>
-                    <li class="text-white border-b-2 border-first md:mr-12 hover:border-white">
+                    <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
                         <a href="#kritik">Kritik</a>
                     </li>
                     <button
-                        class="text-white border-2 border-first md:mr-12 px-4 py-2 border-white cursor-pointer hover:bg-secondary hover:border-first focus:bg-secondary focus:border-first"
+                        class="text-white border-2 border-[#047D00] md:mr-12 px-4 py-2 border-white cursor-pointer hover:bg-secondary hover:border-[#047D00] focus:bg-secondary focus:border-[#047D00]"
                         onclick="modal_login.showModal()">Login</button>
                 </ul>
             </nav> -->
         </div>
     </header>
-
     <main>
+        <dialog id="modalGantiAlamat" class="modal">
+            <div class="flex flex-col gap-4 modal-box w-11/12 max-w-3xl font-poppins">
+                <h3 class="font-bold text-lg text-center">Daftar Alamat</h3>
+                <a href="alamat.html" class="w-full p-2 border-2 border-[#047D00] text-[#047D00] text-center rounded-lg hover:bg-[#047D00] hover:text-white">Tambah Alamat</a>
+                <div class="flex flex-col gap-4">
+                    <div class="flex justify-between p-4 border-2 border-[#047D00] bg-green-50 rounded-lg">
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-4">
+                                <div>Rumah</div>
+                                <div class="p-1 border-2 text-sm text-[#047D00] border-[#047D00]">Utama</div>
+                            </div>
+                            <div class="flex">
+                                <div>Tegar Santoso</div>
+                                <div class="divider divider-horizontal before:bg-black after:bg-black"></div>
+                                <div>081234567890</div>
+                            </div>
+                            <div>
+                                Jl. Mawar Indah No. 123, Kel. Melati, Kec. Cempaka, Jakarta, 12345
+                            </div>
+                            <div>
+                                <a href="alamat.html" class="text-[#047D00]">Ubah</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 items-end">                            
+                            <!-- <button class="p-2 border-2 rounded-lg">Atur sebagai Utama</button> -->
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-4 border-2 rounded-lg">
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-4">
+                                <div>Kantor</div>
+                                <!-- <div class="p-1 border-2 text-sm">Utama</div> -->
+                            </div>
+                            <div class="flex">
+                                <div>Tegar Santoso</div>
+                                <div class="divider divider-horizontal before:bg-black after:bg-black"></div>
+                                <div>081234567890</div>
+                            </div>
+                            <div>
+                                Jl Sancang, Kel Babakan, Kec Babakan, Kota Bogor, 12345
+                            </div>
+                            <div>
+                                <a href="alamat.html" class="text-[#047D00]">Ubah</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 justify-center items-end">                            
+                            <button class="p-2 border-2 border-[#047D00] rounded-lg text-[#047D00] hover:bg-[#047D00] hover:text-white">Pilih</button>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+            </form>
+        </dialog>   
         <section id="detail" class="py-16 lg:px-36 bg-gray-100 mt-16 mx-auto">
             <div class="flex flex-wrap gap justify-center">
                 <div class="flex flex-col gap-4 w-full lg:w-2/3 p-2">
@@ -116,7 +169,7 @@
                             Jl. Mawar Indah No. 123, Kel. Melati, Kec. Cempaka, Jakarta, 12345, 6281234567890
                         </div>
                         <div>
-                            <button class="px-2 border-2 rounded-lg hover:cursor-pointer">Ganti Alamat</button>
+                            <button onclick="modalGantiAlamat.showModal()" class="px-2 border-2 rounded-lg hover:cursor-pointer hover:border-[#047D00] hover:text-[#047D00]">Ganti Alamat</button>
                         </div>
                     </div>                    
                     <div class="flex flex-col gap-4 bg-white p-6 rounded-lg font-poppins">
