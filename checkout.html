@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <!-- Navbar -->
     <header class="font-poppins shadow fixed top-0 w-full z-10 h-16 bg-white">
         <div
@@ -101,8 +100,62 @@
             </nav> -->
         </div>
     </header>
-
     <main>
+        <dialog id="modalGantiAlamat" class="modal">
+            <div class="flex flex-col gap-4 modal-box w-11/12 max-w-3xl font-poppins">
+                <h3 class="font-bold text-lg text-center">Daftar Alamat</h3>
+                <a href="alamat.html" class="w-full p-2 border-2 border-[#047D00] text-[#047D00] text-center rounded-lg hover:bg-[#047D00] hover:text-white">Tambah Alamat</a>
+                <div class="flex flex-col gap-4">
+                    <div class="flex justify-between p-4 border-2 border-[#047D00] bg-green-50 rounded-lg">
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-4">
+                                <div>Rumah</div>
+                                <div class="p-1 border-2 text-sm text-[#047D00] border-[#047D00]">Utama</div>
+                            </div>
+                            <div class="flex">
+                                <div>Tegar Santoso</div>
+                                <div class="divider divider-horizontal before:bg-black after:bg-black"></div>
+                                <div>081234567890</div>
+                            </div>
+                            <div>
+                                Jl. Mawar Indah No. 123, Kel. Melati, Kec. Cempaka, Jakarta, 12345
+                            </div>
+                            <div>
+                                <a href="alamat.html" class="text-[#047D00]">Ubah</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 items-end">                            
+                            <!-- <button class="p-2 border-2 rounded-lg">Atur sebagai Utama</button> -->
+                        </div>
+                    </div>
+                    <div class="flex justify-between p-4 border-2 rounded-lg">
+                        <div class="flex flex-col">
+                            <div class="flex items-center gap-4">
+                                <div>Kantor</div>
+                                <!-- <div class="p-1 border-2 text-sm">Utama</div> -->
+                            </div>
+                            <div class="flex">
+                                <div>Tegar Santoso</div>
+                                <div class="divider divider-horizontal before:bg-black after:bg-black"></div>
+                                <div>081234567890</div>
+                            </div>
+                            <div>
+                                Jl Sancang, Kel Babakan, Kec Babakan, Kota Bogor, 12345
+                            </div>
+                            <div>
+                                <a href="alamat.html" class="text-[#047D00]">Ubah</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2 justify-center items-end">                            
+                            <button class="p-2 border-2 border-[#047D00] rounded-lg text-[#047D00] hover:bg-[#047D00] hover:text-white">Pilih</button>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+            </form>
+        </dialog>   
         <section id="detail" class="py-16 lg:px-36 bg-gray-100 mt-16 mx-auto">
             <div class="flex flex-wrap gap justify-center">
                 <div class="flex flex-col gap-4 w-full lg:w-2/3 p-2">
@@ -116,7 +169,7 @@
                             Jl. Mawar Indah No. 123, Kel. Melati, Kec. Cempaka, Jakarta, 12345, 6281234567890
                         </div>
                         <div>
-                            <button class="px-2 border-2 rounded-lg hover:cursor-pointer">Ganti Alamat</button>
+                            <button onclick="modalGantiAlamat.showModal()" class="px-2 border-2 rounded-lg hover:cursor-pointer hover:border-[#047D00] hover:text-[#047D00]">Ganti Alamat</button>
                         </div>
                     </div>                    
                     <div class="flex flex-col gap-4 bg-white p-6 rounded-lg font-poppins">
