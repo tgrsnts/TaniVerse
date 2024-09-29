@@ -26,40 +26,43 @@
     <!-- Navbar -->
     <header class="shadow fixed top-0 w-full z-10 h-20 bg-[#047D00]">
         <div
-            class="bg-[#047D00] relative flex justify-center flex-col lg:h-20 overflow-hidden px-4 py-4 md:px-36 md:mx-auto md:flex-row md:items-center">
-            <a href="index.html" class="flex items-center whitespace-nowrap text-2xl">
-                <img class="w-24 lg:w-24" src="image/logo-taniverse-putih.png" alt="">
-            </a>
-            <input type="checkbox" class="peer hidden" id="navbar-open" />
-            <label class="absolute top-7 right-8 cursor-pointer md:hidden" for="navbar-open">
-                <span class="sr-only">Toggle Navigation</span>            
-                <i class="fa-solid fa-bars h-6 w-6 text-white"></i>
-            </label>
-            <nav aria-label="Header Navigation"
-                class="peer-checked:mt-4 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
-                <ul
-                    class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0 font-poppins font-semibold">
-                    <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
-                        <a href="#hero">Home</a>
-                    </li>
-                    <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
-                        <a href="#tentang">Tentang Kami</a>
-                    </li>
-                    <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
-                        <a href="#belanja">Produk</a>
-                    </li>
-                    <!-- <div class="divider divider-horizontal before:bg-white after:bg-white"></div> -->
-                    <button
-                        class="text-white border-2 md:mr-12 px-4 py-2 border-white cursor-pointer hover:bg-additional2 hover:border-primary focus:bg-additional2 focus:border-primary"
-                        onclick="modal_login.showModal()">Masuk</button>
-                    <li
-                        class="text-white border-2 border-white md:mr-12 px-4 py-2 hover:bg-additional2 hover:border-primary focus:bg-additional2 focus:border-primary">
-                        <a href="dashboard.html">Dashboard</a>
-                    </li>
-                </ul>
-            </nav>
+          class="bg-[#047D00] relative flex justify-between lg:justify-start flex-col lg:flex-row lg:h-20 overflow-hidden px-4 py-4 md:px-36 md:mx-auto md:flex-wrap md:items-center">
+          <a href="index.html" class="flex items-center whitespace-nowrap text-2xl">
+            <img class="w-24 lg:w-24" src="image/logo-taniverse-putih.png" alt="">
+          </a>
+      
+          <!-- Hamburger Menu for Mobile -->
+          <input type="checkbox" class="peer hidden" id="navbar-open" />
+          <label class="absolute top-7 right-8 cursor-pointer md:hidden" for="navbar-open">
+            <span class="sr-only">Toggle Navigation</span>
+            <i class="fa-solid fa-bars h-6 w-6 text-white"></i>
+          </label>
+      
+          <!-- Navigation Menu -->
+          <nav aria-label="Header Navigation"
+            class="peer-checked:max-h-60 max-h-0 w-full lg:w-auto flex-col flex lg:flex-row lg:max-h-full overflow-hidden transition-all duration-300 lg:items-center lg:ml-auto">
+            <ul class="flex flex-col lg:flex-row lg:space-y-0 space-y-4 items-center lg:ml-auto font-poppins font-semibold">
+              <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
+                <a href="#hero">Home</a>
+              </li>
+              <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
+                <a href="#tentang">Tentang Kami</a>
+              </li>
+              <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
+                <a href="#belanja">Produk</a>
+              </li>
+              <button
+                class="text-white border-2 md:mr-12 px-4 py-2 border-white cursor-pointer hover:bg-additional2 hover:border-primary focus:bg-additional2 focus:border-primary"
+                onclick="modal_login.showModal()">Masuk</button>
+              <li
+                class="text-white border-2 border-white md:mr-12 px-4 py-2 hover:bg-additional2 hover:border-primary focus:bg-additional2 focus:border-primary">
+                <a href="dashboard.html">Dashboard</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-    </header>
+      </header>
+      
     <!-- Modal Login  -->
     <dialog id="modal_login" class="modal backdrop-blur-lg">
         <div class="modal-box font-poppins p-0 w-76 lg:w-96 flex flex-col">
