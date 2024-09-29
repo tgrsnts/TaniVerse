@@ -24,116 +24,51 @@
 <body>
 
     <!-- Navbar -->
-    <!-- <nav class="bg-red-600 lg:p-4 flex items-center fixed top-0 w-full z-10 h-16">
-        <a href="index.html" class="flex grow items-center ml-8 lg:ml-10 cursor-pointer">
-            <span class="text-white text-2xl font-poppins font-bold">TaniVerse</span>
-        </a>
-        <div class="block lg:hidden">
-            <button onclick="toggleMenu()" class="flex items-center rounded text-black-500 hover:text-black-400">
-                <i id="navbar-open" class="fa-solid fa-bars text-red-600 mr-8"></i>
-                <i id="navbar-close" class="fa-solid fa-xmark hidden text-red-600 mr-2"></i>
-            </button>
-        </div>
-        <div id="navbar" class="block items-center justify-between h-16 lg:flex lg:items-center lg:w-auto hidden">
-            <div class="bg-red-600 cursor-pointer h-full flex items-center">
-                <a href="#menu"
-                    class="text-white px-4 py-3 font-semibold font-poppins border-b-2 border-red-600 hover:border-white">Menu</a>
-            </div>
-            <div class="bg-red-600 cursor-pointer h-full flex items-center">
-                <a href="#kontak"
-                    class="text-white px-4 py-3 font-semibold font-poppins border-b-2 border-red-600 hover:border-white">Kontak</a>
-            </div>
-
-            <div class="bg-red-600 cursor-pointer h-full flex items-center">
-                <a href="#kritik"
-                    class="text-white px-4 py-3 font-semibold font-poppins border-b-2 border-red-600 hover:border-white">Kritik
-                    &
-                    Saran</a>
-            </div>
-        </div>
-    </nav> -->
-    <!-- <header class="bg-red-600 lg:p-4 flex items-center fixed top-0 w-full z-10 h-16 font-poppins">
-        <div class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
-          <a href="#" class="flex items-center whitespace-nowrap text-2xl">
-            <span class="mr-2 text-4xl text-blue-600">
-              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6.925 16.875Q5.2 16.225 4.1 14.713Q3 13.2 3 11.25q0-1.975.938-3.513Q4.875 6.2 6 5.15q1.125-1.05 2.062-1.6L9 3v2.475q0 .625.45 1.062q.45.438 1.075.438q.35 0 .65-.15q.3-.15.5-.425L12 6q.95.55 1.625 1.35t1.025 1.8l-1.675 1.675q-.05-.6-.287-1.175q-.238-.575-.638-1.05q-.35.2-.738.287q-.387.088-.787.088q-1.1 0-1.987-.612Q7.65 7.75 7.25 6.725q-.95.925-1.6 2.062Q5 9.925 5 11.25q0 .775.275 1.462q.275.688.75 1.213q.05-.5.287-.938q.238-.437.588-.787L9 10.1l2.15 2.1q.05.05.1.125t.1.125l-1.425 1.425q-.05-.075-.087-.125q-.038-.05-.088-.1L9 12.925l-.7.7q-.125.125-.212.287q-.088.163-.088.363q0 .3.175.537q.175.238.45.363ZM9 10.1Zm0 0ZM7.4 22L6 20.6L19.6 7L21 8.4L17.4 12H21v2h-5.6l-.5.5l1.5 1.5H21v2h-2.6l2.1 2.1l-1.4 1.4l-2.1-2.1V22h-2v-4.6l-1.5-1.5l-.5.5V22h-2v-3.6Z" /></svg>
-            </span>
-            <span class="text-white text-2xl font-bold">TaniVerse</span>
-          </a>
-          <input type="checkbox" class="peer hidden" id="navbar-open" />
-          <label class="absolute top-5 right-7 cursor-pointer md:hidden" for="navbar-open">
-            <span class="sr-only">Toggle Navigation</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </label>
-          <nav aria-label="Header Navigation" class="bg-red-600 peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
-            <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
-              <li class="text-white md:mr-12 border-b-2 border-red-600 hover:border-white"><a href="#menu">Menu</a></li>
-              <li class="text-white md:mr-12 border-b-2 border-red-600 hover:border-white"><a href="#kontak">Kontak</a></li>
-              <li class="text-white md:mr-12 border-b-2 border-red-600 hover:border-white"><a href="#kritik">Kritik & Saran</a></li>
-              <li class="text-white md:mr-12 hover:text-blue-600">
-                <button class="rounded-md border-2 border-blue-600 px-6 py-1 font-medium text-blue-600 transition-colors hover:bg-blue-600 hover:text-white">Login</button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header> -->
-
-    <header class="shadow fixed top-0 w-full z-10 bg-primary">
+    <!-- Navbar -->
+    <header class="shadow fixed top-0 w-full z-10 h-20 bg-[#047D00]">
         <div
-            class="bg-primary relative flex justify-center flex-col overflow-hidden px-4 py-4 md:px-36 md:mx-auto md:flex-row md:items-center">
+            class="bg-[#047D00] relative flex justify-between lg:justify-start flex-col lg:flex-row lg:h-20 overflow-hidden px-4 py-4 md:px-36 md:mx-auto md:flex-wrap md:items-center">
             <a href="index.html" class="flex items-center whitespace-nowrap text-2xl">
-                <!-- <span class="mr-2 text-4xl text-blue-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
-                        preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M6.925 16.875Q5.2 16.225 4.1 14.713Q3 13.2 3 11.25q0-1.975.938-3.513Q4.875 6.2 6 5.15q1.125-1.05 2.062-1.6L9 3v2.475q0 .625.45 1.062q.45.438 1.075.438q.35 0 .65-.15q.3-.15.5-.425L12 6q.95.55 1.625 1.35t1.025 1.8l-1.675 1.675q-.05-.6-.287-1.175q-.238-.575-.638-1.05q-.35.2-.738.287q-.387.088-.787.088q-1.1 0-1.987-.612Q7.65 7.75 7.25 6.725q-.95.925-1.6 2.062Q5 9.925 5 11.25q0 .775.275 1.462q.275.688.75 1.213q.05-.5.287-.938q.238-.437.588-.787L9 10.1l2.15 2.1q.05.05.1.125t.1.125l-1.425 1.425q-.05-.075-.087-.125q-.038-.05-.088-.1L9 12.925l-.7.7q-.125.125-.212.287q-.088.163-.088.363q0 .3.175.537q.175.238.45.363ZM9 10.1Zm0 0ZM7.4 22L6 20.6L19.6 7L21 8.4L17.4 12H21v2h-5.6l-.5.5l1.5 1.5H21v2h-2.6l2.1 2.1l-1.4 1.4l-2.1-2.1V22h-2v-4.6l-1.5-1.5l-.5.5V22h-2v-3.6Z" />
-                    </svg>
-                </span> -->
-                <!-- <span class="font-poppins font-bold text-white">TaniVerse.</span> -->
-                <img class="w-12 lg:w-24" src="image/logo.png" alt="">
+                <img class="w-24 lg:w-24" src="image/logo-taniverse-putih.png" alt="">
             </a>
+
+            <!-- Hamburger Menu for Mobile -->
             <input type="checkbox" class="peer hidden" id="navbar-open" />
-            <label class="absolute top-4 right-8 cursor-pointer md:hidden" for="navbar-open">
+            <label class="absolute top-7 right-8 cursor-pointer md:hidden" for="navbar-open">
                 <span class="sr-only">Toggle Navigation</span>
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg> -->
                 <i class="fa-solid fa-bars h-6 w-6 text-white"></i>
             </label>
+
+            <!-- Navigation Menu -->
             <nav aria-label="Header Navigation"
-                class="peer-checked:mt-4 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
+                class="peer-checked:max-h-60 max-h-0 w-full lg:w-auto flex-col flex lg:flex-row lg:max-h-full overflow-hidden transition-all duration-300 lg:items-center lg:ml-auto">
                 <ul
-                    class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0 font-poppins font-semibold">
-                    <li class="text-white border-b-2 border-primary md:mr-12 hover:border-white">
+                    class="flex flex-col lg:flex-row lg:space-y-0 space-y-4 items-center lg:ml-auto font-poppins font-semibold">
+                    <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
                         <a href="#hero">Home</a>
                     </li>
-                    <li class="text-white border-b-2 border-primary md:mr-12 hover:border-white">
+                    <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
                         <a href="#tentang">Tentang Kami</a>
                     </li>
-                    <li class="text-white border-b-2 border-primary md:mr-12 hover:border-white">
-                        <a href="#belanja">Belanja</a>
-                    </li>
-                    <li class="text-white border-b-2 border-primary md:mr-12 hover:border-white">
-                        <a href="#kritik">Hubungi</a>
+                    <li class="text-white border-b-2 border-[#047D00] md:mr-12 hover:border-white">
+                        <a href="#belanja">Produk</a>
                     </li>
                     <button
-                        class="text-white border-2 md:mr-12 px-4 py-2 border-white cursor-pointer hover:bg-additional2 hover:border-primary focus:bg-additional2 focus:border-primary"
+                        class="text-white border-2 md:mr-12 px-4 py-2 border-white cursor-pointer hover:bg-[#035700] hover:border-[#047D00] focus:bg-[#035700] focus:border-[#047D00]"
                         onclick="modal_login.showModal()">Masuk</button>
-                    <!-- <li
-                        class="text-white border-2 border-white md:mr-12 px-4 py-2 hover:bg-additional2 hover:border-primary focus:bg-additional2 focus:border-primary">
+                    <li
+                        class="text-white border-2 border-white md:mr-12 px-4 py-2 hover:bg-[#035700] hover:border-[#047D00] focus:bg-[#035700] focus:border-[#047D00]">
                         <a href="dashboard.html">Dashboard</a>
-                    </li> -->
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <!-- Modal Login  -->
     <dialog id="modal_login" class="modal backdrop-blur-lg">
         <div class="modal-box font-poppins p-0 w-76 lg:w-96 flex flex-col">
-            <div class="flex items-center bg-primary rounded-t-lg h-24 lg:h-40">
+            <div class="flex items-center bg-[#047D00] rounded-t-lg h-24 lg:h-40">
                 <h2 class="text-2xl lg:text-5xl font-bold text-center text-white w-full">Login</h2>
             </div>
             <div class="px-8 pt-4 pb-12">
@@ -141,7 +76,7 @@
                     <div class="flex flex-col">
                         <label for="username">Username</label>
                         <input type="text" id="username" placeholder="Masukkan username"
-                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-primary focus-border-primary">
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-[#047D00] focus-border-[#047D00]">
                     </div>
                     <div class="flex flex-col">
                         <label for="password">Password</label>
@@ -153,20 +88,20 @@
                                     for="toggle"><i class="fa-solid fa-eye"></i></label>
                             </div>
                             <input type="password" id="password" placeholder="Masukkan password"
-                                class="js-password w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-primary focus-border-primary">
+                                class="js-password w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-[#047D00] focus-border-[#047D00]">
                         </div>
                         <a href=""
-                            class="mt-1 text-sm text-primary hover:text-additional2 hover:underline hover:underline-additional2 hover:underline-offset-4">Lupa
+                            class="mt-1 text-sm text-[#047D00] hover:text-[#035700] hover:underline hover:underline-[#035700] hover:underline-offset-4">Lupa
                             password?</a>
                     </div>
                     <div class="flex flex-col mt-2">
                         <button type="submit"
-                            class="p-2 rounded-md bg-primary text-white hover:bg-additional2">Login</button>
+                            class="p-2 rounded-md bg-[#047D00] text-white hover:bg-[#035700]">Login</button>
                     </div>
                 </form>
                 <div class="divider">atau masuk dengan</div>
                 <button
-                    class="mt-2 flex justify-center items-center gap-2 w-full border-2 rounded-md py-1 text-black hover:bg-gray-100 hover:text-additional2"
+                    class="mt-2 flex justify-center items-center gap-2 w-full border-2 rounded-md py-1 text-black hover:bg-gray-100 hover:text-[#035700]"
                     onclick="modal_register.showModal()">
                     <svg class="w-8 aspect-square" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1"
@@ -378,7 +313,7 @@
                 <div class="mt-2 text-center">
                     Belum punya akun? <form method="dialog" class="inline">
                         <button
-                            class="buttonSwitchToLoginOrRegister text-primary hover:text-additional2 hover:underline hover:underline-additional2 hover:underline-offset-4"
+                            class="buttonSwitchToLoginOrRegister text-[#047D00] hover:text-[#035700] hover:underline hover:underline-[#035700] hover:underline-offset-4"
                             onclick="modal_register.showModal()">Daftar!</button>
                     </form>
                 </div>
@@ -392,7 +327,7 @@
     <!-- Modal Register  -->
     <dialog id="modal_register" class="modal backdrop-blur-lg">
         <div class="modal-box font-poppins p-0 w-76 lg:w-96 flex flex-col">
-            <div class="flex items-center bg-primary rounded-t-lg h-24 lg:h-40">
+            <div class="flex items-center bg-[#047D00] rounded-t-lg h-24 lg:h-40">
                 <h2 class="text-2xl lg:text-5xl font-bold text-center text-white w-full">Daftar</h2>
             </div>
             <div class="px-8 pt-4 pb-12">
@@ -400,12 +335,12 @@
                     <div class="flex flex-col">
                         <label for="namaRegister">Nama</label>
                         <input type="text" id="namaRegister" placeholder="Masukkan nama"
-                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-primary focus-border-primary">
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-[#047D00] focus-border-[#047D00]">
                     </div>
                     <div class="flex flex-col">
                         <label for="username-register">Username</label>
                         <input type="text" id="username-register" placeholder="Masukkan username"
-                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-primary focus-border-primary">
+                            class="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-[#047D00] focus-border-[#047D00]">
                     </div>
                     <div class="flex flex-col">
                         <label for="password-register">Password</label>
@@ -417,17 +352,17 @@
                                     for="toggle-register"><i class="fa-solid fa-eye"></i></label>
                             </div>
                             <input type="password" id="password-register" placeholder="Masukkan password"
-                                class="js-password w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-primary focus-border-primary">
+                                class="js-password w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-[#047D00] focus-border-[#047D00]">
                         </div>
                     </div>
                     <div class="flex flex-col mt-4">
                         <button type="submit"
-                            class="p-2 rounded-md bg-primary text-white hover:bg-additional2">Daftar</button>
+                            class="p-2 rounded-md bg-[#047D00] text-white hover:bg-[#035700]">Daftar</button>
                     </div>
                 </form>
                 <div class="divider">atau daftar dengan</div>
                 <button
-                    class="mt-2 flex justify-center items-center gap-2 w-full border-2 rounded-md py-1 text-black hover:bg-gray-100 hover:text-additional2"
+                    class="mt-2 flex justify-center items-center gap-2 w-full border-2 rounded-md py-1 text-black hover:bg-gray-100 hover:text-[#035700]"
                     onclick="modal_register.showModal()">
                     <svg class="w-8 aspect-square" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" id="Capa_1"
@@ -639,7 +574,7 @@
                 <div class="mt-2 text-center">
                     Sudah punya akun? <form method="dialog" class="inline">
                         <button
-                            class="buttonSwitchToLoginOrRegister text-primary hover:text-additional2 hover:underline hover:underline-additional2 hover:underline-offset-4"
+                            class="buttonSwitchToLoginOrRegister text-[#047D00] hover:text-[#035700] hover:underline hover:underline-[#035700] hover:underline-offset-4"
                             onclick="modal_login.showModal()">Login!</button>
                     </form>
                 </div>
@@ -664,7 +599,11 @@
                         <img src="image/garis-tentang.png" alt="" class="mt-4 w-32">
                     </h2>
                     <p class="text-sm lg:text-lg text-justify font-poppins text-gray-700">
-                        TaniVerse adalah platform yang dirancang khusus untuk memenuhi kebutuhan para petani dengan menyediakan berbagai produk pertanian berkualitas tinggi. Dari pupuk yang mendukung kesuburan tanah, benih unggul yang memastikan hasil panen maksimal, hingga pestisida yang efektif melindungi tanaman dari hama, TaniVerse hadir sebagai solusi lengkap untuk meningkatkan produktivitas pertanian.
+                        TaniVerse adalah platform yang dirancang khusus untuk memenuhi kebutuhan para petani dengan
+                        menyediakan berbagai produk pertanian berkualitas tinggi. Dari pupuk yang mendukung kesuburan
+                        tanah, benih unggul yang memastikan hasil panen maksimal, hingga pestisida yang efektif
+                        melindungi tanaman dari hama, TaniVerse hadir sebagai solusi lengkap untuk meningkatkan
+                        produktivitas pertanian.
                     </p>
 
                     <p class="text-sm lg:text-lg text-justify font-poppins text-gray-700 mt-4">
@@ -686,42 +625,35 @@
         </section>
     </main>
 
-    <footer class="px-4 py-8 bg-primary text-white">
+    <footer class="px-4 lg:px-36 py-8 bg-[#047D00] text-white">
         <div class="container mx-auto flex flex-wrap">
             <!-- Kolom Pertama -->
-            <div class="w-full lg:w-1/2 lg:pr-4">
+            <div class="w-full flex flex-col gap-4 lg:w-1/2">
                 <!-- <h3 class="text-4xl font-poppins font-bold mb-4">TaniVerse.</h3> -->
-                <img src="image/logo.png" class="h-8 lg:h-16" alt="">
+                <img src="image/logo-taniverse-putih.png" class="w-28 lg:w-32" alt="">
                 <p class="font-poppins text-white text-justify mb-4">
-                    Platform TaniVerse menyediakan berbagai alat pertanian berkualitas tinggi untuk mendukung
-                    produktivitas para petani. TaniVerse berkomitmen untuk memudahkan akses Anda ke peralatan modern
-                    yang efisien, langsung dari produsen terpercaya. Dengan teknologi yang di tawarkan, TaniVerse siap
-                    menghubungkan petani dengan alat pertanian terbaik, memberikan solusi cepat dan praktis untuk
-                    kebutuhan pertanian.
+                    TaniVerse adalah platform yang dirancang khusus untuk memenuhi kebutuhan para petani dengan menyediakan berbagai produk pertanian berkualitas tinggi. Dari pupuk yang mendukung kesuburan tanah, benih unggul yang memastikan hasil panen maksimal, hingga pestisida yang efektif melindungi tanaman dari hama, TaniVerse hadir sebagai solusi lengkap untuk meningkatkan produktivitas pertanian.
                 </p>
             </div>
             <!-- Kolom Kedua -->
-            <div class="w-full h-52 lg:h-auto lg:w-1/2 lg:pl-4">
-                <h3 class="text-xl font-poppins font-bold mb-4">Hubungi Kami</h3>
-                <div class="flex gap-3 items-center mb-4">
-                    <i class="fa-solid fa-phone w-4"></i>
-                    <span class="font-poppins">+62 89670522489</span>
+            <div class="w-full lg:w-1/4 flex flex-col gap-2 lg:gap-8 lg:pl-16">
+                <div class="font-semibold font-poppins text-md lg:text-2xl">Ikuti Kami</div>
+                <div class="flex flex-row lg:flex-col gap-4">
+                    <a href="">
+                        <img class="w-8" src="image/instagram_logo.png" alt="">
+                    </a>
+                    <a href="">
+                        <img class="w-8" src="image/facebook_logo.png" alt="">
+                    </a>
+                    <a href="">
+                        <img class="w-8" src="image/whatsapp_logo.png" alt="">
+                    </a>
                 </div>
-                <div class="flex gap-3 items-center mb-4">
-                    <i class="fa-solid fa-envelope w-4"></i>
-                    <span class="font-poppins">TaniVerse@gmail.com</span>
-                </div>
-                <div class="flex gap-3 items-center mb-4">
-                    <i class="fa-solid fa-location-dot w-4"></i>
-                    <span class="font-poppins">Jl. Lodaya No. 2, Kota Bogor, Indonesia</span>
-                </div>
-                <!-- <div id="lokasi" class="flex flex-col items-center mt-2">
-                    <h2 class="text-xl font-poppins font-bold mb-2 text-start w-full">Lokasi</h2>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.8655974168457!2d106.808518!3d-6.589305!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c57776d4956d%3A0x7d23c109e11fa013!2%20Makan%20TaniVerse!5e0!3m2!1sid!2sid!4v1716653576602!5m2!1sid!2sid"
-                        class="w-full" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div> -->
+            </div>
+            <!-- Kolom Ketiga -->
+            <div class="w-full lg:w-1/4 flex flex-col gap-8 justify-center items-center">
+                <img class="w-60" src="image/vegetarian0.png" alt="">
+                <div class="font-poppins">© 2023 - 2024, PT. TaniVerse.</div>
             </div>
         </div>
     </footer>
