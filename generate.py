@@ -22,11 +22,12 @@ for idx, item in enumerate(data, 1):
         heading=item['name'],
         content=item['description'],
         price=item['price'],
-        specifications=item['specifications']
+        specifications=item['specifications'],
+        foto=item['foto']
     )
     
     # Simpan hasil ke file HTML, misalnya 'output1.html', 'output2.html', dst.
-    filename = f'detail_{item["name"].lower()}_baru.html'
+    filename = f'{item["filename"].lower()}'
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(output)
 
